@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <div className='Navbar'>
             <h1 className="Title">NG Calculator</h1>
-            <Link to={"calculator"}>Calculator</Link>
+            <Link to={"/NG-Calculator/calculator"}>Calculator</Link>
         </div>
     )
 }
