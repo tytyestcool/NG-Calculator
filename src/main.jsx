@@ -2,16 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import Home from "./Home.jsx";
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import CalculatorPage from "./assets/calculator/Calculator.jsx";
 
+
+const router = createBrowserRouter([
+    {
+        path: "/NG-Calculator/",
+        element: <Home/>,
+    },
+    {
+        path: "/NG-Calculator/calculator",
+        element: <CalculatorPage/>,
+    }
+])
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-      <BrowserRouter>
-          <Routes>
-              <Route path={"/"} element={<Home/>} />
-              <Route path={"/calculator"} element={<CalculatorPage/>} />
-          </Routes>
-      </BrowserRouter>
-  </React.StrictMode>,
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
 )
