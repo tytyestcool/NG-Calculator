@@ -1,0 +1,59 @@
+[
+  {
+    "id" : 3576,
+    "name" : "Ecotron",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 1,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 1,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 1,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 2,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 3,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 4,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  },
+  {
+    "id" : 5,
+    "name" : "Four",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0
+  }
+
+]

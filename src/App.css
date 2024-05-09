@@ -1,0 +1,194 @@
+.Navbar{
+  background-color: #222222;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  top: 0;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 999; /* Assurez-vous que la navbar est au-dessus du reste du contenu */
+}
+
+.Title{
+  font-size: 30px;
+  margin: 20px;
+}
+
+.Calculator{
+  display: flex;
+}
+
+.DefaultMachineContainer{
+  position: absolute;
+  top: 73px;
+  left: 0;
+  background-color: #333333;
+}
+
+.SelectMachineContainer{
+  position: absolute;
+  top: 73px;
+  right: 0;
+  background-color: #333333;
+}
+
+.SelectMachinesTitle,
+.DefaultMachinesTitle{
+  position: relative;
+  font-size: 25px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.SelectMachinesList,
+.DefaultMachinesList {
+  overflow: auto;
+  height: calc(100vh - 141px);
+  white-space: wrap;
+  display: block;
+  width: 180px;
+}
+
+.SelectMachinesList{
+  height: calc(100vh - 196px);
+}
+
+.SelectMachineTitle,
+.DefaultMachineTitle{
+  padding: 10px;
+  margin: 0;
+}
+
+.SelectMachine,
+.DefaultMachine {
+  position: relative;
+  display: block;
+  border: 1px solid transparent;
+  min-height: 120px;
+  width: 170px;
+  background-color: #202020;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: 150ms ease-in;
+}
+
+.SelectMachineRemoveBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 78px;
+  bottom: 5px;
+  border: none;
+  background-color: #a10101;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 150ms ease-in;
+}
+
+.SelectMachineRemoveBtn:hover{
+  background-color: rgba(161, 1, 1, 0.6);
+}
+
+.SelectMachineClearBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background-color: #bd0101;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 150ms ease-in;
+}
+
+.SelectMachineAddBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 42px;
+  bottom: 5px;
+  border: none;
+  background-color: darkgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 150ms ease-in;
+}
+
+.SelectMachineInput{
+  position: absolute;
+  right: 45px;
+  width: 45px;
+  bottom: 5px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.SelectMachineInput:focus-visible{
+  border: none;
+}
+
+.CraftBtnContainer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.CraftBtn{
+  bottom: 0;
+  background-color: #5d6400;
+  border: none;
+  padding: 10px 30px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 150ms ease-in;
+}
+
+.CraftBtn:hover{
+  background-color: rgba(93, 100, 0, 0.6);
+  box-shadow: #99a501 0px 0px 8px 2px
+}
+
+.SelectMachineClearBtn:hover{
+  background-color: rgba(189, 1, 1, 0.6);;
+}
+
+.DefaultMachineAddBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background-color: darkgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 150ms ease-in;
+}
+
+.DefaultMachineAddBtn:hover{
+  background-color: rgba(0, 100, 0, 0.60);
+}
+
+.SelectMachine:hover,
+.DefaultMachine:hover {
+  border-color: #646cff;
+}
+
+.SelectMachinesList::-webkit-scrollbar,
+.DefaultMachinesList::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.SelectMachinesList::-webkit-scrollbar-track,
+.DefaultMachinesList::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+.SelectMachinesList::-webkit-scrollbar-thumb,
+.DefaultMachinesList::-webkit-scrollbar-thumb {
+  background-color: #3e3d3d;
+  border-radius: 21px;
+}
