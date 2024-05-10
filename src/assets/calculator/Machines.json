@@ -4,56 +4,120 @@
     "name" : "Ecotron",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft": [[101509,101509,101509],[101509,33638,101509],[101509,5092,101509]]
   },
   {
-    "id" : 1,
-    "name" : "Four",
+    "id" : 33630,
+    "name" : "Générateur de charbon",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : [[5256,5256,5256], [265, 61, 265], [265, 28450, 265]]
   },
   {
-    "id" : 1,
-    "name" : "Four",
+    "id" : 33634,
+    "name" : "Module de stockage d'énergie",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : []
   },
   {
-    "id" : 1,
-    "name" : "Four",
+    "id" : 33638,
+    "name" : "Four électrique",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : [[101509,101509,101509], [101509,61,101509], [101508,1015014,101508]]
   },
   {
-    "id" : 2,
-    "name" : "Four",
+    "id" : 336312,
+    "name" : "Compresseur",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : []
   },
   {
-    "id" : 3,
-    "name" : "Four",
+    "id" : 3575,
+    "name" : "Réparateur",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : []
   },
   {
-    "id" : 4,
-    "name" : "Four",
+    "id" : 33640,
+    "name" : "Compresseur électrique",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : []
   },
   {
-    "id" : 5,
-    "name" : "Four",
+    "id" : 33644,
+    "name" : "Fabricant de circuits",
     "type" : "est",
     "conso" : 10,
-    "nb" : 0
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 33648,
+    "name" : "Module de stockage d'oxygène",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 336412,
+    "name" : "Module de stockage d'énergie avancé",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 3651,
+    "name" : "Imprimante",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 3599,
+    "name" : "Concasseur",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 3559,
+    "name" : "Charg. d'essence",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id" : 3642,
+    "name" : "Chargeur électrique",
+    "type" : "est",
+    "conso" : 10,
+    "nb" : 0,
+    "craft" : []
+  },
+  {
+    "id": 36455,
+    "name": "Assemb. rouages",
+    "type": "est",
+    "conso": 10,
+    "nb": 0,
+    "craft" : []
   }
 
 ]

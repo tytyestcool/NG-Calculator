@@ -5,8 +5,7 @@ function DefaultMachine(props) {
 
     return (
         <div className={"DefaultMachine"}>
-            <h3 className={"DefaultMachineTitle"}>Nom : {DMachine.name}</h3>
-            <h3 className={"DefaultMachineTitle"}>Type : {DMachine.nb}</h3>
+            <h3 className={"DefaultMachineTitle"}>{DMachine.name}</h3>
             <button onClick={() => addMachine(DMachine.id)} className={"DefaultMachineAddBtn"}><i
                 className="bi bi-plus"></i></button>
 

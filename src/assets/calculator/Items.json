@@ -1,0 +1,186 @@
+[
+  {
+    "id": 101509,
+    "name": "Steel compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[263,263,1015011], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 1015011,
+    "name": "Fer compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[265,265, 0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 33638,
+    "name": "Four électrique",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,101509,101509], [101509,61,101509], [101508,1015014,101508]],
+    "amount": 1
+  },
+  {
+    "id": 28450,
+    "name": "Câble en aluminium",
+    "from": "craft",
+    "final": false,
+    "craft": [[35,35,35], [101505,101505,101505], [35,35,35]],
+    "amount": 6
+  },
+  {
+    "id": 5256,
+    "name": "Cooper",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 35,
+    "name": "Laine",
+    "from": "kill",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 5092,
+    "name": "Circuit en Gallium",
+    "from": "craft",
+    "final": false,
+    "craft": [[5091,5091,5091], [5091,331,5091], [5091,5091,5091]],
+    "amount": 1
+  },
+  {
+    "id": 101508,
+    "name": "Aluminium compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[101505,101505,0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 1015014,
+    "name": "Wafer avancé",
+    "from": "circuit",
+    "final": false,
+    "craft": [264,101502,101502,331,356],
+    "amount": 1
+  },
+  {
+    "id": 101505,
+    "name": "Aluminium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 331,
+    "name": "Redstone",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 5091,
+    "name": "Gallium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 264,
+    "name": "Diamant",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 101502,
+    "name": "Silucium brut",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 61,
+    "name": "Fourneau",
+    "from": "craft",
+    "final": false,
+    "craft": [[4,4,4], [4,0,4], [4,4,4]],
+    "amount": 1
+  },
+  {
+    "id": 4,
+    "name": "Pierre",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 356,
+    "name": "Répeteur",
+    "from": "craft",
+    "final": false,
+    "craft": [[76,331,76], [1,1,1], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 76,
+    "name": "Torche en redstone",
+    "from": "craft",
+    "final": false,
+    "craft": [[331,0,0], [280,0, 0], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 280,
+    "name": "Bâton",
+    "from": "craft",
+    "final": false,
+    "craft": [[5,0,0], [5,0, 0], [0, 0, 0]],
+    "amount": 4
+  },
+  {
+    "id": 5,
+    "name": "Planche",
+    "from": "craft",
+    "final": true,
+    "craft": [[17,0,0], [0,0, 0], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 263,
+    "name": "Charbon",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 265,
+    "name": "Fer",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 1,
+    "name": "Roche",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  }
+]

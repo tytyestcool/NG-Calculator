@@ -34,6 +34,7 @@
   background-color: #333333;
 }
 
+
 .SelectMachinesTitle,
 .DefaultMachinesTitle{
   position: relative;
@@ -58,8 +59,49 @@
 
 .SelectMachineTitle,
 .DefaultMachineTitle{
-  padding: 10px;
+  padding: 5px 10px;
   margin: 0;
+}
+
+.CraftItemTitle{
+  margin: 0;
+}
+
+.CraftItem{
+  display: block;
+  position: relative;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  height: 50px;
+  width: 250px;
+  padding: 10px 10px 20px;
+  border: 2px solid transparent;
+  transition: 200ms ease-in;
+  margin: 10px 10px 0 0;
+}
+
+.CraftItemValidate{
+  border: 2px solid darkgreen;
+}
+
+.CraftInfosTitle{
+  position: relative;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+  height: 70px;
+}
+
+.CraftStepInfo{
+  top: 70px;
+  white-space: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: auto;
+  height: calc(100vh - 200px);
+  position: absolute;
 }
 
 .SelectMachine,
@@ -67,12 +109,12 @@
   position: relative;
   display: block;
   border: 1px solid transparent;
-  min-height: 120px;
   width: 170px;
   background-color: #202020;
   margin-top: 10px;
   border-radius: 10px;
   font-size: 12px;
+  padding-bottom: 30px;
   transition: 150ms ease-in;
 }
 
@@ -167,6 +209,53 @@
   transition: 150ms ease-in;
 }
 
+.CraftItemValidateBtn{
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+  background-color: #60ac16;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.StepBtnMinus{
+  border: none;
+  background-color: #bd0101;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.StepBtnPlus{
+  border: none;
+  background-color: #5d6400;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.CraftInfos{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 73px;
+  left: 180px;
+  height: calc(100vh - 73px);
+  width: calc(100% - 360px);
+}
+
+.StepTitle {
+  margin: 10px;
+}
+.StepBtns{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  bottom: 0;
+}
+
 .DefaultMachineAddBtn:hover{
   background-color: rgba(0, 100, 0, 0.60);
 }
@@ -176,17 +265,20 @@
   border-color: #646cff;
 }
 
+.CraftStepInfo::-webkit-scrollbar,
 .SelectMachinesList::-webkit-scrollbar,
 .DefaultMachinesList::-webkit-scrollbar {
   width: 5px;
   border-radius: 10px;
 }
 
+.CraftStepInfo::-webkit-scrollbar-track,
 .SelectMachinesList::-webkit-scrollbar-track,
 .DefaultMachinesList::-webkit-scrollbar-track {
   background: #1d1d1d;
 }
 
+.CraftStepInfo::-webkit-scrollbar-thumb,
 .SelectMachinesList::-webkit-scrollbar-thumb,
 .DefaultMachinesList::-webkit-scrollbar-thumb {
   background-color: #3e3d3d;
