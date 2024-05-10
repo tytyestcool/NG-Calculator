@@ -24,6 +24,30 @@
     "amount": 1
   },
   {
+    "id": 33640,
+    "name": "Compresseur électrique",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509, 145, 101509], [101509, 1015010, 101509], [28450, 1015014, 28450]],
+    "amount": 1
+  },
+  {
+    "id": 33634,
+    "name": "Module de stockage d'énergie",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,101509,101509],[10154,10154,10154],[101509,101509,101509]],
+    "amount": 1
+  },
+  {
+    "id" : 336412,
+    "name" : "Module de stockage d'énergie avancé",
+    "from": "craft",
+    "final": false,
+    "craft" : [[101509,101509,101509],[33634,33634,33634],[101509,101509,101509]],
+    "amount": 1
+  },
+  {
     "id": 28450,
     "name": "Câble en aluminium",
     "from": "craft",
@@ -37,6 +61,14 @@
     "from": "craft",
     "final": false,
     "craft": [[42,42,42], [0,265,0], [265,265,265]],
+    "amount": 1
+  },
+  {
+    "id": 4511,
+    "name": "Clé de réparation",
+    "from": "craft",
+    "final": false,
+    "craft": [[265,0,265], [0,265,0], [0,265,0]],
     "amount": 1
   },
   {
@@ -56,11 +88,51 @@
     "amount": 1
   },
   {
+    "id": 116,
+    "name": "Table d'enchantement",
+    "from": "craft",
+    "final": false,
+    "craft": [[0, 340, 0], [264, 49, 264], [49, 49, 49]],
+    "amount": 1
+  },
+  {
+    "id": 340,
+    "name": "Livre",
+    "from": "craft",
+    "final": false,
+    "craft": [[339, 339, 339], [334, 0, 0], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 339,
+    "name": "Papier",
+    "from": "mine",
+    "final": true,
+    "craft": [[338, 338, 388], [0, 0, 0], [0, 0, 0]],
+    "amount": 3
+  },
+  {
+    "id": 334,
+    "name": "Cuir",
+    "from": "kill",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
     "id": 5092,
     "name": "Circuit en Gallium",
     "from": "craft",
     "final": false,
     "craft": [[5091,5091,5091], [5091,331,5091], [5091,5091,5091]],
+    "amount": 1
+  },
+  {
+    "id": 4501,
+    "name": "Circuit en Tiber",
+    "from": "craft",
+    "final": false,
+    "craft": [[4500,4500,4500], [4500,331,4500], [4500,4500,4500]],
     "amount": 1
   },
   {
@@ -72,11 +144,35 @@
     "amount": 1
   },
   {
+    "id": 101615,
+    "name": "Desh compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[101612,0,0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 4500,
+    "name": "Tiber compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[4499,0,0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
     "id": 101507,
     "name": "Etain compressé",
     "from": "compress",
     "final": false,
     "craft": [[101504,101504,0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 1015010,
+    "name": "Bronze compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[14240,14240,0], [0,0,0], [0,0,0]],
     "amount": 1
   },
   {
@@ -98,6 +194,38 @@
   {
     "id": 101505,
     "name": "Aluminium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 14240,
+    "name": "Bronze",
+    "from": "smelt",
+    "final": false,
+    "craft": [14242],
+    "amount": 1
+  },
+  {
+    "id": 14242,
+    "name": "Bronze Dust",
+    "from": "craft",
+    "final": false,
+    "craft": [[5256,101504, 5256], [0, 0, 0], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 4499,
+    "name": "Tiber Crystal",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 101612,
+    "name": "Desh",
     "from": "mine",
     "final": true,
     "craft": [],
@@ -136,6 +264,126 @@
     "amount": 1
   },
   {
+    "id": 49,
+    "name": "Obsidienne",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 406,
+    "name": "Quartz du nether",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 14234,
+    "name": "Steel plate",
+    "from": "craft",
+    "final": false,
+    "craft": [[14239,14239,0],[14239,14239,0],[0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 14239,
+    "name": "Steel",
+    "from": "smelt",
+    "final": false,
+    "craft": [14241],
+    "amount": 1
+  },
+  {
+    "id": 14241,
+    "name": "Steel Dust",
+    "from": "craft",
+    "final": false,
+    "craft": [[0,263, 0], [263, 265, 263], [0, 263, 0]],
+    "amount": 1
+  },
+  {
+    "id": 14228,
+    "name": "Basic Circuit",
+    "from": "craft",
+    "final": false,
+    "craft": [[404,331,404], [331,14234,331], [404,331,404]],
+    "amount": 1
+  },
+  {
+    "id": 3578,
+    "name": "Pompe",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,101509,101509], [1015013,10120,1015013], [101509,325,101509]],
+    "amount": 1
+  },
+  {
+    "id": 10120,
+    "name": "Ventilateur d'air",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,0,101509], [0,1015013,0], [101509,331,101509]],
+    "amount": 1
+  },
+  {
+    "id": 325,
+    "name": "Seau",
+    "from": "craft",
+    "final": false,
+    "craft": [[265,0,265], [0,265,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+    "id": 3659,
+    "name": "Tube à carburant",
+    "from": "craft",
+    "final": false,
+    "craft": [[14236,14236,14236], [20,20,20], [14236,14236,14236]],
+    "amount": 1
+  },
+  {
+    "id": 14236,
+    "name": "Gold Plate",
+    "from": "craft",
+    "final": false,
+    "craft": [[266,266,0], [266,266,0], [0,0,0]],
+    "amount": 1
+  },
+  {
+  "id": 404,
+  "name": "Comparateur",
+  "from": "craft",
+  "final": false,
+  "craft": [[0,76,0],[76,406,76],[1,1,1]],
+  "amount": 1
+  },
+  {
+    "id": 266,
+    "name": "Or",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 20,
+    "name": "Verre",
+    "from": "smelt",
+    "final": false,
+    "craft": [12],
+    "amount": 1
+  },
+  {
+    "id": 12,
+    "name": "Sable",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
     "id": 101502,
     "name": "Silucium brut",
     "from": "mine",
@@ -150,6 +398,22 @@
     "final": false,
     "craft": [[4,4,4], [4,0,4], [4,4,4]],
     "amount": 1
+  },
+  {
+    "id": 10114,
+    "name": "Grosse bonbonne d'oxygéne",
+    "from": "craft",
+    "final": false,
+    "craft": [[35,35,35], [101170,101170,101170], [101509,101509,101509]],
+    "amount": 1
+  },
+  {
+    "id": 101170,
+    "name": "Cartonche en étain",
+    "from": "craft",
+    "final": false,
+    "craft": [[101504,0,101504], [101504,0,101504], [101504,101504,101504]],
+    "amount": 2
   },
   {
     "id": 4,
@@ -213,6 +477,22 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 69,
+    "name": "Levier",
+    "from": "craft",
+    "final": false,
+    "craft": [[280, 0, 0], [4, 0, 0], [0, 0, 0]],
+    "amount": 1
+  },
+  {
+    "id": 77,
+    "name": "Buton",
+    "from": "craft",
+    "final": false,
+    "craft": [[1, 0, 0], [0, 0, 0], [0, 0, 0]],
     "amount": 1
   },
   {

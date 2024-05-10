@@ -154,8 +154,6 @@ function CraftingPage() {
                         "toCraft" : []
                     })
                 }
-
-
             }
             let index = resources.findIndex(resource => resource.id === item.id)
             if(index !== -1) {
@@ -192,6 +190,9 @@ function CraftingPage() {
                     break
                 } else {
                     i++;
+                    if(i>20) {
+                        break
+                    }
                 }
             }
         }
@@ -265,7 +266,7 @@ function CraftingPage() {
             <NavBar></NavBar>
             <div className={"Calculator"}>
                 <DefaultMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} addMachine={addMachine} />
-                {Step>=0?<CraftInfos CraftInfo={CraftInfo} craftEnd={craftEnd} Step={Step} setStep={setStep} validate={validate} valideAll={valideAll}  />:""}
+                {Step>=0?<CraftInfos CraftInfo={CraftInfo} craftEnd={craftEnd} Step={Step} setStep={setStep} validate={validate} valideAll={valideAll}/>:""}
                 {SelectMachinesList.length>0?
                     <SelectMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} craft={craft} setMachine={setMachine} clearMachine={clearMachine} />:""}
                 {Resources.length>0?<CraftResources resources={Resources} />:""}
