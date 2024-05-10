@@ -32,6 +32,14 @@
     "amount": 6
   },
   {
+    "id": 145,
+    "name": "Enclume",
+    "from": "craft",
+    "final": false,
+    "craft": [[42,42,42], [0,265,0], [265,265,265]],
+    "amount": 1
+  },
+  {
     "id": 5256,
     "name": "Cooper",
     "from": "mine",
@@ -64,6 +72,14 @@
     "amount": 1
   },
   {
+    "id": 101507,
+    "name": "Etain compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[101504,101504,0], [0,0,0], [0,0,0]],
+    "amount": 1
+  },
+  {
     "id": 1015014,
     "name": "Wafer avancé",
     "from": "circuit",
@@ -72,8 +88,24 @@
     "amount": 1
   },
   {
+    "id": 1015013,
+    "name": "Wafer de base",
+    "from": "circuit",
+    "final": false,
+    "craft": [264,101502,101502,331,76],
+    "amount": 3
+  },
+  {
     "id": 101505,
     "name": "Aluminium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 101504,
+    "name": "Etain",
     "from": "mine",
     "final": true,
     "craft": [],
@@ -181,6 +213,22 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "amount": 1
+  },
+  {
+    "id": 42,
+    "name": "Bloc de fer",
+    "from": "craft",
+    "final": false,
+    "craft": [[265,265,265],[265,265,265],[265,265,265]],
+    "amount": 1
+  },
+  {
+    "id": 10154,
+    "name": "Batterie",
+    "from": "craft",
+    "final": false,
+    "craft": [[0,101507,0],[101507,331,101507],[101507,263,101507]],
     "amount": 1
   }
 ]

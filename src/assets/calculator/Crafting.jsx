@@ -5,8 +5,9 @@ import Craftdata from "./Items.json";
 import DefaultMachines from "./DefaultMachines.jsx";
 import SelectMachines from "./SelectMachines.jsx";
 import CraftInfos from "./CraftInfos.jsx";
+import CraftResources from "./CraftResources.jsx";
 
-function CalculatorPage() {
+function CraftingPage() {
 
     const [DefaultMachinesList, setDefaultMachinesList] = useState([]);
 
@@ -16,6 +17,7 @@ function CalculatorPage() {
 
     const [Step, setStep] = useState(-1);
 
+    const [Resources, setResources] = useState([]);
 
     useEffect(() => {
         setDefaultMachinesList(Machinesdata)
@@ -143,7 +145,6 @@ function CalculatorPage() {
                 let index2 = steps.findIndex(step => step.id === i+1)
                 console.log(iteminfo)
                 if(index2 !== -1) {
-                    console.log("add")
                     steps[index2].crafts = steps[index2].crafts.concat(craftToArray(item.craft, Math.ceil((1/item.amount)*parseInt(iteminfo.crafts[0].nb))))
                 } else {
                     steps.push({
@@ -155,21 +156,22 @@ function CalculatorPage() {
                 }
 
 
-            } else {
-                let index = resources.findIndex(resource => resource.id === item.id)
-                if(index !== -1) {
-                    resources[index].nb +=  Math.ceil((1/item.amount)*parseInt(iteminfo.crafts[0].nb)) ;
-                } else {
-                    resources.push({
-                        "id": item.id,
-                        "name" : item.name,
-                        "nb" : Math.ceil((1/item.amount)*parseInt(iteminfo.crafts[0].nb))
-                    })
-                }
             }
-            let index = iteminfo.resources.findIndex(resource => resource.id === item.id)
+            let index = resources.findIndex(resource => resource.id === item.id)
             if(index !== -1) {
-                iteminfo.resources[index].nb += parseInt(iteminfo.crafts[0].nb);
+                resources[index].nb += parseInt(iteminfo.crafts[0].nb);
+            } else {
+                resources.push({
+                    "id": item.id,
+                    "name" : item.name,
+                    "nb" : parseInt(iteminfo.crafts[0].nb),
+                    "craft" : 0
+                })
+            }
+
+            let index3 = iteminfo.resources.findIndex(resource => resource.id === item.id)
+            if(index3 !== -1) {
+                iteminfo.resources[index3].nb += parseInt(iteminfo.crafts[0].nb);
             } else {
                 iteminfo.resources.push({
                     "id": item.id,
@@ -194,24 +196,48 @@ function CalculatorPage() {
             }
         }
 
+        setResources(resources)
         console.log(resources)
-
         return steps
     }
 
-    function validate(id) {
-        console.log(CraftInfo[CraftInfo.length-1-Step])
-        const index = CraftInfo[CraftInfo.length-1-Step].resources.findIndex(machine => machine.id === id)
+    function valideAll() {
 
-        console.log(index)
+        CraftInfo[CraftInfo.length-1-Step].resources.forEach(resource => {
+            validate(resource.id)
+        })
+
+    }
+
+    function validate(id) {
+
+        const index = CraftInfo[CraftInfo.length-1-Step].resources.findIndex(item => item.id === id)
 
         if(index !== -1) {
-            const NSMachine = [...CraftInfo]
-            CraftInfo[CraftInfo.length-1-Step].resources[index].craft = true;
-            setCraftInfo(NSMachine)
+            const NewCraftInfo = [...CraftInfo]
+            NewCraftInfo[CraftInfo.length-1-Step].resources[index].craft = !CraftInfo[CraftInfo.length-1-Step].resources[index].craft ;
+            setCraftInfo(NewCraftInfo)
         }
 
-        console.log(CraftInfo)
+        const index2 = Resources.findIndex(item => item.id === id)
+
+        if(index2 !== -1) {
+            const NewResources = [...Resources]
+            if(CraftInfo[CraftInfo.length-1-Step].resources[index].craft === true) {
+                NewResources[index2].craft += CraftInfo[CraftInfo.length-1-Step].resources[index].nb ;
+            } else {
+                NewResources[index2].craft -= CraftInfo[CraftInfo.length-1-Step].resources[index].nb ;
+            }
+
+            setResources(NewResources)
+        }
+
+    }
+
+    function craftEnd() {
+        setResources([])
+        setCraftInfo([])
+        setStep(-1)
     }
 
     function craft() {
@@ -239,11 +265,13 @@ function CalculatorPage() {
             <NavBar></NavBar>
             <div className={"Calculator"}>
                 <DefaultMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} addMachine={addMachine} />
-                {Step>=0?<CraftInfos CraftInfo={CraftInfo} Step={Step} SetStep={setStep} validate={validate} />:""}
-                <SelectMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} craft={craft} setMachine={setMachine} clearMachine={clearMachine} />
+                {Step>=0?<CraftInfos CraftInfo={CraftInfo} craftEnd={craftEnd} Step={Step} setStep={setStep} validate={validate} valideAll={valideAll}  />:""}
+                {SelectMachinesList.length>0?
+                    <SelectMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} craft={craft} setMachine={setMachine} clearMachine={clearMachine} />:""}
+                {Resources.length>0?<CraftResources resources={Resources} />:""}
             </div>
         </>
     )
 }
 
-export default CalculatorPage
+export default CraftingPage

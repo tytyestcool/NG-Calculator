@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import Home from "./Home.jsx";
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import CalculatorPage from "./assets/calculator/Calculator.jsx";
+import CraftingPage from "./assets/calculator/Crafting.jsx";
 
 
 const router = createBrowserRouter([
@@ -12,8 +12,8 @@ const router = createBrowserRouter([
         element: <Home/>,
     },
     {
-        path: "/NG-Calculator/calculator",
-        element: <CalculatorPage/>,
+        path: "/NG-Calculator/crafting",
+        element: <CraftingPage/>,
     }
 ])
 

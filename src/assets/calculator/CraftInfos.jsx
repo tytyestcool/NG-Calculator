@@ -3,7 +3,7 @@ import CraftItem from "./CraftItem.jsx";
 
 function CraftInfos(props) {
 
-    const {CraftInfo, Step , SetStep, validate} = props;
+    const {CraftInfo, Step , setStep, validate, valideAll, craftEnd} = props;
 
     return (
         <div className={"CraftInfos"}>
@@ -12,17 +12,21 @@ function CraftInfos(props) {
                 {CraftInfo[CraftInfo.length - 1 - Step].resources.map(resourse => {
 
                     return (
-                        <CraftItem item={resourse} validate={validate}/>
+                        <CraftItem key={resourse.id} item={resourse} validate={validate}/>
                     )
 
                 })}
+                <div>
+
+                </div>
             </div>
             <div className={"StepBtns"}>
-                <button className={"StepBtnMinus"} disabled={Step === 0} onClick={() => SetStep(Step - 1)}> - 1</button>
+                <button className={"StepBtnMinus"} disabled={Step === 0} onClick={() => setStep(Step - 1)}><i className="bi bi-chevron-left"></i></button>
                 <h2 className={"StepTitle"}>Etape : {Step + 1}</h2>
-                <button className={"StepBtnPlus"} disabled={Step === CraftInfo.length - 1}
-                        onClick={() => SetStep(Step + 1)}> + 1
-                </button>
+                {Step === CraftInfo.length - 1 ?
+                    <button className={"StepBtnPlus"} onClick={() => craftEnd()}><i className="bi bi-check"></i></button> :
+                    <button className={"StepBtnPlus"} onClick={() => setStep(Step + 1)}><i className="bi bi-chevron-right"></i></button>}
+                <button className={"StepBtnAll"} onClick={() => valideAll()}><i className="bi bi-check2-all"></i></button>
             </div>
         </div>
     )

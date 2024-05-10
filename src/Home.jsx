@@ -1,9 +1,7 @@
-import { useState } from 'react'
 import './App.css'
 import NavBar from "./assets/Main/NavBar.jsx";
 
 function Home() {
-  const [count, setCount] = useState(10)
 
   return (
     <>
