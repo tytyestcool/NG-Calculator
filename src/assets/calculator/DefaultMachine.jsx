@@ -6,8 +6,8 @@ function DefaultMachine(props) {
     return (
         <div className={"DefaultMachine"}>
             <h3 className={"DefaultMachineTitle"}>{DMachine.name}</h3>
-            <button onClick={() => addMachine(DMachine.id)} className={"DefaultMachineAddBtn"}><i
-                className="bi bi-plus"></i></button>
+            {DMachine.craft.length>0?<button onClick={() => addMachine(DMachine.id)} className={"DefaultMachineAddBtn"}><i
+                className="bi bi-plus"></i></button>:""}
 
         </div>
     )
