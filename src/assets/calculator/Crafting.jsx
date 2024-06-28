@@ -1,17 +1,17 @@
 import NavBar from "../Main/NavBar.jsx";
 import {useEffect, useState} from "react";
-import Machinesdata from "./Machines.json";
-import Craftdata from "./Items.json";
-import DefaultMachines from "./DefaultMachines.jsx";
-import SelectMachines from "./SelectMachines.jsx";
+import Itemsdata from "./Items.json";
+import DefaultItems from "./DefaultItems.jsx";
+import SelectItems from "./SelectItems.jsx";
 import CraftInfos from "./CraftInfos.jsx";
 import CraftResources from "./CraftResources.jsx";
+import howToCraft from "./HowToCraft.jsx";
 
 function CraftingPage() {
 
-    const [DefaultMachinesList, setDefaultMachinesList] = useState([]);
+    const [DefaultItemsList, setDefaultItemsList] = useState([]);
 
-    const [SelectMachinesList, setSelectMachinesList] = useState([]);
+    const [SelectItemsList, setSelectItemsList] = useState([]);
 
     const [CraftInfo, setCraftInfo] = useState([]);
 
@@ -19,52 +19,65 @@ function CraftingPage() {
 
     const [Resources, setResources] = useState([]);
 
+    const [HowToCraftInfo, setHowToCraftInfo] = useState(null)
+
     useEffect(() => {
-        setDefaultMachinesList(Machinesdata)
+        let items = [...Itemsdata]
+        items = items.filter(item => item.final === false)
+        setDefaultItemsList(items)
     }, [])
 
 
-    function addMachine(id) {
-        console.log(id);
-        const index = DefaultMachinesList.findIndex(machine => machine.id === id);
-        const selectIndex = SelectMachinesList.findIndex(machine => machine.id === id);
-        console.log(index, selectIndex);
+    function setHowtoCraft(id) {
+        const infos = [...Itemsdata]
+        let iteminfos = infos.find(item => item.id === id)
+        console.log(iteminfos)
+        if(HowToCraftInfo === null || HowToCraftInfo.id !== id ) {
+            setHowToCraftInfo(iteminfos)
+        } else {
+            setHowToCraftInfo(null)
+        }
 
-        const copySelectMachinesList = [...SelectMachinesList];
+
+    }
+
+    function addItem(id) {
+        const index = DefaultItemsList.findIndex(Item => Item.id === id);
+        const selectIndex = SelectItemsList.findIndex(Item => Item.id === id);
+
+        console.log(id, index, selectIndex)
+
+        const copySelectItemsList = [...SelectItemsList];
 
         if (selectIndex !== -1) {
-            const copySelectMachinesList = [...SelectMachinesList];
-            copySelectMachinesList[selectIndex].nb++;
-            setSelectMachinesList(copySelectMachinesList);
+            const copySelectItemsList = [...SelectItemsList];
+            copySelectItemsList[selectIndex].nb++;
+            setSelectItemsList(copySelectItemsList);
         } else if (index !== -1) {
 
-            const NSMachine = Object.assign({}, DefaultMachinesList[index]);
+            const NSItem = Object.assign({}, DefaultItemsList[index]);
 
-            NSMachine.nb++;
-            copySelectMachinesList.push(NSMachine);
-            setSelectMachinesList(copySelectMachinesList);
+            NSItem.nb++;
+            copySelectItemsList.push(NSItem);
+            setSelectItemsList(copySelectItemsList);
         }
     }
 
-    function setMachine(e, id) {
+    function setItem(e, id) {
 
         let value = e.target.value;
 
-        console.log(value)
-
-        const index = SelectMachinesList.findIndex(machine => machine.id === id);
-
-        console.log(index)
+        const index = SelectItemsList.findIndex(Item => Item.id === id);
 
         if(index !== -1) {
             if(value > 0) {
-                const copySelectMachinesList = [...SelectMachinesList];
-                copySelectMachinesList[index].nb = value
-                setSelectMachinesList(copySelectMachinesList);
+                const copySelectItemsList = [...SelectItemsList];
+                copySelectItemsList[index].nb = value
+                setSelectItemsList(copySelectItemsList);
             } else {
-                const copySelectMachinesList = [...SelectMachinesList];
-                copySelectMachinesList[index].nb = 1
-                setSelectMachinesList(copySelectMachinesList);
+                const copySelectItemsList = [...SelectItemsList];
+                copySelectItemsList[index].nb = 1
+                setSelectItemsList(copySelectItemsList);
             }
 
         }
@@ -107,7 +120,7 @@ function CraftingPage() {
 
             }
         }
-        console.log(res)
+
         return res
     }
 
@@ -121,29 +134,26 @@ function CraftingPage() {
         let i = 0;
         let resources = [];
 
-        SelectMachinesList.forEach(machine => {
+        SelectItemsList.forEach(Item => {
             let crafts= []
 
-            crafts = crafts.concat(craftToArray(machine.craft, parseInt(machine.nb)))
+            crafts = crafts.concat(craftToArray(Item.craft, parseInt(Item.nb)))
 
             steps[0].crafts = steps[0].crafts.concat(crafts)
             steps[0].toCraft.push({
-                "id": machine.id,
-                "name" : machine.name,
-                "nb" : machine.nb,
+                "id": Item.id,
+                "name" : Item.name,
+                "nb" : Item.nb,
                 "craft" : false
             })
         })
 
-        console.log(steps)
-
-
         while (steps.find(step => step.id === i).crafts.length > 0) {
             let iteminfo = steps.find(step => step.id === i)
-            let item = Craftdata.find(item => item.id === iteminfo.crafts[0].id)
+            let item = Itemsdata.find(item => item.id === iteminfo.crafts[0].id)
             if(!item.final) {
                 let index2 = steps.findIndex(step => step.id === i+1)
-                console.log(iteminfo)
+
                 if(index2 !== -1) {
                     steps[index2].crafts = steps[index2].crafts.concat(craftToArray(item.craft, Math.ceil((1/item.amount)*parseInt(iteminfo.crafts[0].nb))))
                 } else {
@@ -181,7 +191,7 @@ function CraftingPage() {
             iteminfo.crafts.splice(0, 1)
             if(iteminfo.crafts.length === 0){
                 iteminfo.resources.forEach(resource => {
-                    let item = Craftdata.find(item => item.id === resource.id)
+                    let item = Itemsdata.find(item => item.id === resource.id)
                     if(!item.final) {
                         steps.find(step => step.id === i+1).toCraft.push(resource)
                     }
@@ -198,7 +208,6 @@ function CraftingPage() {
         }
 
         setResources(resources)
-        console.log(resources)
         return steps
     }
 
@@ -239,25 +248,24 @@ function CraftingPage() {
         setResources([])
         setCraftInfo([])
         setStep(-1)
+        setHowToCraftInfo(null)
     }
 
     function craft() {
-        console.log("craft")
         let res = infosCraft()
-        console.log(res)
         setCraftInfo(res)
         setStep(0)
-        setSelectMachinesList([])
+        setSelectItemsList([])
+        setHowToCraftInfo(null)
     }
 
-    function clearMachine(id) {
-        console.log(id)
-        const index = SelectMachinesList.findIndex(machine => machine.id === id)
+    function clearItem(id) {
+        const index = SelectItemsList.findIndex(Item => Item.id === id)
 
         if(index !== -1) {
-            const NSMachine = [...SelectMachinesList]
-            NSMachine.splice(index, 1)
-            setSelectMachinesList(NSMachine)
+            const NSItem = [...SelectItemsList]
+            NSItem.splice(index, 1)
+            setSelectItemsList(NSItem)
         }
     }
 
@@ -265,10 +273,10 @@ function CraftingPage() {
         <>
             <NavBar></NavBar>
             <div className={"Calculator"}>
-                <DefaultMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} addMachine={addMachine} />
-                {Step>=0?<CraftInfos CraftInfo={CraftInfo} craftEnd={craftEnd} Step={Step} setStep={setStep} validate={validate} valideAll={valideAll}/>:""}
-                {SelectMachinesList.length>0?
-                    <SelectMachines DMachines={DefaultMachinesList} SMachines={SelectMachinesList} craft={craft} setMachine={setMachine} clearMachine={clearMachine} />:""}
+                <DefaultItems DItems={DefaultItemsList} SItems={SelectItemsList} addItem={addItem} />
+                {Step>=0?<CraftInfos setHowtoCraft={setHowtoCraft} HowToCraftInfo={HowToCraftInfo} CraftInfo={CraftInfo} craftEnd={craftEnd} Step={Step} setStep={setStep} validate={validate} valideAll={valideAll}/>:""}
+                {SelectItemsList.length>0?
+                    <SelectItems DItems={DefaultItemsList} SItems={SelectItemsList} craft={craft} setItem={setItem} clearItem={clearItem} />:""}
                 {Resources.length>0?<CraftResources resources={Resources} />:""}
             </div>
         </>

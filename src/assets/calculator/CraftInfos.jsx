@@ -1,9 +1,11 @@
 import CraftItem from "./CraftItem.jsx";
+import HowToCraft from "./HowToCraft.jsx";
 
 
 function CraftInfos(props) {
 
-    const {CraftInfo, Step , setStep, validate, valideAll, craftEnd} = props;
+    // eslint-disable-next-line react/prop-types
+    const {CraftInfo = [], Step , setStep, validate, valideAll, craftEnd, setHowtoCraft, HowToCraftInfo} = props;
 
     return (
         <div className={"CraftInfos"}>
@@ -12,7 +14,7 @@ function CraftInfos(props) {
                 {CraftInfo[CraftInfo.length - 1 - Step].resources.map(resourse => {
 
                     return (
-                        <CraftItem key={resourse.id} item={resourse} validate={validate}/>
+                        <CraftItem key={resourse.id} item={resourse} validate={validate} setHowToCraft={setHowtoCraft} />
                     )
 
                 })}
@@ -27,7 +29,9 @@ function CraftInfos(props) {
                     <button className={"StepBtnPlus"} onClick={() => craftEnd()}><i className="bi bi-check"></i></button> :
                     <button className={"StepBtnPlus"} onClick={() => setStep(Step + 1)}><i className="bi bi-chevron-right"></i></button>}
                 <button className={"StepBtnAll"} onClick={() => valideAll()}><i className="bi bi-check2-all"></i></button>
+
             </div>
+            {HowToCraftInfo !== null?<HowToCraft infos={HowToCraftInfo} />:""}
         </div>
     )
 

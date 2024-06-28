@@ -5,6 +5,7 @@
     "from": "compress",
     "final": false,
     "craft": [[263,263,1015011], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -13,7 +14,107 @@
     "from": "compress",
     "final": false,
     "craft": [[265,265, 0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
+  },
+  {
+    "id" : 3651,
+    "name" : "Imprimante",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101509,101509,101509],[101509,116,101509],[101509,14228,101509]]
+  },
+  {
+    "id" : 3599,
+    "name" : "Concasseur",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101509,101509,101509],[101509,145,101509],[101509,14228,101509]]
+  },
+  {
+    "id" : 3559,
+    "name" : "Charg. d'essence",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101509,101509,101509],[101509,3578,3659],[101509,101509,101509]]
+  },
+  {
+    "id" : 3642,
+    "name" : "Chargeur électrique",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101615,101615,101615], [101615,336412,101615], [101615,5092,101615]]
+  },
+  {
+    "id" : 336312,
+    "name" : "Compresseur",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101505, 145, 101505], [101505, 5256, 101505], [101505, 1015013, 101505]]
+  },  
+  {
+    "id" : 3576,
+    "name" : "Ecotron",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft": [[101509,101509,101509],[101509,33638,101509],[101509,5092,101509]]
+  },
+  {
+    "id" : 33630,
+    "name" : "Générateur de charbon",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[5256,5256,5256], [265, 61, 265], [265, 28450, 265]]
+  },
+  {
+    "id" : 3575,
+    "name" : "Réparateur",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101615,101615,101615], [101615,33640,101615], [101615,4501,101615]]
+  },
+  {
+    "id" : 33644,
+    "name" : "Fabricant de circuits",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101505, 69, 101505], [77,61,77], [28450,76, 28450]]
+  },
+  {
+    "id" : 33648,
+    "name" : "Module de stockage d'oxygène",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101509,101509,101509],[10114,10114,10114],[101509,101509,101509]]
+  },
+  {
+    "id": 36455,
+    "name": "Assemb. rouages",
+    "from": "craft",
+    "final": false,
+    "nb" : 0,
+    "amount": 1,
+    "craft" : [[101615,101615,101615], [101615,4511,101615], [101615,4501,101615]]
   },
   {
     "id": 33638,
@@ -21,6 +122,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101509,101509,101509], [101509,61,101509], [101508,1015014,101508]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -29,6 +131,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101509, 145, 101509], [101509, 1015010, 101509], [28450, 1015014, 28450]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -37,6 +140,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101509,101509,101509],[10154,10154,10154],[101509,101509,101509]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -45,6 +149,7 @@
     "from": "craft",
     "final": false,
     "craft" : [[101509,101509,101509],[33634,33634,33634],[101509,101509,101509]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -53,6 +158,7 @@
     "from": "craft",
     "final": false,
     "craft": [[35,35,35], [101505,101505,101505], [35,35,35]],
+    "nb":0,
     "amount": 6
   },
   {
@@ -61,6 +167,7 @@
     "from": "craft",
     "final": false,
     "craft": [[42,42,42], [0,265,0], [265,265,265]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -69,6 +176,7 @@
     "from": "craft",
     "final": false,
     "craft": [[265,0,265], [0,265,0], [0,265,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -77,6 +185,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -85,6 +194,7 @@
     "from": "kill",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -93,6 +203,7 @@
     "from": "craft",
     "final": false,
     "craft": [[0, 340, 0], [264, 49, 264], [49, 49, 49]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -101,6 +212,7 @@
     "from": "craft",
     "final": false,
     "craft": [[339, 339, 339], [334, 0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -109,6 +221,7 @@
     "from": "mine",
     "final": true,
     "craft": [[338, 338, 388], [0, 0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 3
   },
   {
@@ -117,6 +230,7 @@
     "from": "kill",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -125,6 +239,7 @@
     "from": "craft",
     "final": false,
     "craft": [[5091,5091,5091], [5091,331,5091], [5091,5091,5091]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -133,6 +248,7 @@
     "from": "craft",
     "final": false,
     "craft": [[4500,4500,4500], [4500,331,4500], [4500,4500,4500]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -141,6 +257,7 @@
     "from": "compress",
     "final": false,
     "craft": [[101505,101505,0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -149,6 +266,7 @@
     "from": "compress",
     "final": false,
     "craft": [[101612,0,0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -157,6 +275,7 @@
     "from": "compress",
     "final": false,
     "craft": [[4499,0,0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -165,6 +284,7 @@
     "from": "compress",
     "final": false,
     "craft": [[101504,101504,0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -173,6 +293,7 @@
     "from": "compress",
     "final": false,
     "craft": [[14240,14240,0], [0,0,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -180,6 +301,7 @@
     "name": "Wafer avancé",
     "from": "circuit",
     "final": false,
+    "nb": 0,
     "craft": [264,101502,101502,331,356],
     "amount": 1
   },
@@ -189,6 +311,7 @@
     "from": "circuit",
     "final": false,
     "craft": [264,101502,101502,331,76],
+    "nb": 0,
     "amount": 3
   },
   {
@@ -197,6 +320,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -205,6 +329,7 @@
     "from": "smelt",
     "final": false,
     "craft": [14242],
+    "nb": 0,
     "amount": 1
   },
   {
@@ -213,6 +338,7 @@
     "from": "craft",
     "final": false,
     "craft": [[5256,101504, 5256], [0, 0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -221,6 +347,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -229,6 +356,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -237,6 +365,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -245,6 +374,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -253,6 +383,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -261,6 +392,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -269,6 +401,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -277,6 +410,7 @@
     "from": "mine",
     "final": true,
     "craft": [],
+    "nb":0,
     "amount": 1
   },
   {
@@ -285,6 +419,7 @@
     "from": "craft",
     "final": false,
     "craft": [[14239,14239,0],[14239,14239,0],[0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -292,6 +427,7 @@
     "name": "Steel",
     "from": "smelt",
     "final": false,
+    "nb": 0,
     "craft": [14241],
     "amount": 1
   },
@@ -301,6 +437,7 @@
     "from": "craft",
     "final": false,
     "craft": [[0,263, 0], [263, 265, 263], [0, 263, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -309,6 +446,7 @@
     "from": "craft",
     "final": false,
     "craft": [[404,331,404], [331,14234,331], [404,331,404]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -317,6 +455,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101509,101509,101509], [1015013,10120,1015013], [101509,325,101509]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -325,6 +464,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101509,0,101509], [0,1015013,0], [101509,331,101509]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -333,6 +473,7 @@
     "from": "craft",
     "final": false,
     "craft": [[265,0,265], [0,265,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -341,6 +482,7 @@
     "from": "craft",
     "final": false,
     "craft": [[14236,14236,14236], [20,20,20], [14236,14236,14236]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -349,6 +491,7 @@
     "from": "craft",
     "final": false,
     "craft": [[266,266,0], [266,266,0], [0,0,0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -357,6 +500,7 @@
   "from": "craft",
   "final": false,
   "craft": [[0,76,0],[76,406,76],[1,1,1]],
+    "nb":0,
   "amount": 1
   },
   {
@@ -364,7 +508,8 @@
     "name": "Or",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -373,6 +518,7 @@
     "from": "smelt",
     "final": false,
     "craft": [12],
+    "nb": 0,
     "amount": 1
   },
   {
@@ -380,7 +526,8 @@
     "name": "Sable",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -388,7 +535,8 @@
     "name": "Silucium brut",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -397,6 +545,7 @@
     "from": "craft",
     "final": false,
     "craft": [[4,4,4], [4,0,4], [4,4,4]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -405,6 +554,7 @@
     "from": "craft",
     "final": false,
     "craft": [[35,35,35], [101170,101170,101170], [101509,101509,101509]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -413,6 +563,7 @@
     "from": "craft",
     "final": false,
     "craft": [[101504,0,101504], [101504,0,101504], [101504,101504,101504]],
+    "nb":0,
     "amount": 2
   },
   {
@@ -420,7 +571,8 @@
     "name": "Pierre",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -429,6 +581,7 @@
     "from": "craft",
     "final": false,
     "craft": [[76,331,76], [1,1,1], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -437,6 +590,7 @@
     "from": "craft",
     "final": false,
     "craft": [[331,0,0], [280,0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -445,22 +599,34 @@
     "from": "craft",
     "final": false,
     "craft": [[5,0,0], [5,0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 4
+  },
+  {
+    "id": 17,
+    "name": "Buche",
+    "from": "craft",
+    "final": true,
+    "craft": [[17,0,0], [0,0, 0], [0, 0, 0]],
+    "nb":0,
+    "amount": 1
   },
   {
     "id": 5,
     "name": "Planche",
     "from": "craft",
-    "final": true,
+    "final": false,
     "craft": [[17,0,0], [0,0, 0], [0, 0, 0]],
-    "amount": 1
+    "nb":0,
+    "amount": 4
   },
   {
     "id": 263,
     "name": "Charbon",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -468,7 +634,8 @@
     "name": "Fer",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -476,7 +643,8 @@
     "name": "Roche",
     "from": "mine",
     "final": true,
-    "craft": [],
+    "craft":[],
+    "nb":0,
     "amount": 1
   },
   {
@@ -485,6 +653,7 @@
     "from": "craft",
     "final": false,
     "craft": [[280, 0, 0], [4, 0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -493,6 +662,7 @@
     "from": "craft",
     "final": false,
     "craft": [[1, 0, 0], [0, 0, 0], [0, 0, 0]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -501,6 +671,7 @@
     "from": "craft",
     "final": false,
     "craft": [[265,265,265],[265,265,265],[265,265,265]],
+    "nb":0,
     "amount": 1
   },
   {
@@ -509,6 +680,7 @@
     "from": "craft",
     "final": false,
     "craft": [[0,101507,0],[101507,331,101507],[101507,263,101507]],
+    "nb":0,
     "amount": 1
   }
 ]
