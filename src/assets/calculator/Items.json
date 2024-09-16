@@ -60,8 +60,8 @@
     "final": false,
     "nb" : 0,
     "amount": 1,
-    "craft" : [[101505, 145, 101505], [101505, 5256, 101505], [101505, 1015013, 101505]]
-  },  
+    "craft" : [[101505, 145, 101505], [101505, 101503, 101505], [101505, 1015013, 101505]]
+  },
   {
     "id" : 3576,
     "name" : "Ecotron",
@@ -78,7 +78,7 @@
     "final": false,
     "nb" : 0,
     "amount": 1,
-    "craft" : [[5256,5256,5256], [265, 61, 265], [265, 28450, 265]]
+    "craft" : [[101503,101503,101503], [265, 61, 265], [265, 28450, 265]]
   },
   {
     "id" : 3575,
@@ -180,8 +180,8 @@
     "amount": 1
   },
   {
-    "id": 5256,
-    "name": "Cooper",
+    "id": 101503,
+    "name": "Cuivre",
     "from": "mine",
     "final": true,
     "craft": [],
@@ -191,6 +191,15 @@
   {
     "id": 35,
     "name": "Laine",
+    "from": "kill",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 289,
+    "name": "Poudre à cacon",
     "from": "kill",
     "final": true,
     "craft": [],
@@ -261,6 +270,15 @@
     "amount": 1
   },
   {
+    "id": 101506,
+    "name": "Cuivre compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[101503,101503,0], [0,0,0], [0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
     "id": 101615,
     "name": "Desh compressé",
     "from": "compress",
@@ -275,6 +293,24 @@
     "from": "compress",
     "final": false,
     "craft": [[4499,0,0], [0,0,0], [0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5099,
+    "name": "Niobium compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[5098,0,0], [0,0,0], [0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 2585,
+    "name": "Gallium compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [[5091,0,0], [0,0,0], [0,0,0]],
     "nb":0,
     "amount": 1
   },
@@ -337,7 +373,7 @@
     "name": "Bronze Dust",
     "from": "craft",
     "final": false,
-    "craft": [[5256,101504, 5256], [0, 0, 0], [0, 0, 0]],
+    "craft": [[101503,101504, 101503], [0, 0, 0], [0, 0, 0]],
     "nb":0,
     "amount": 1
   },
@@ -380,6 +416,15 @@
   {
     "id": 5091,
     "name": "Gallium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5098,
+    "name": "Niobium",
     "from": "mine",
     "final": true,
     "craft": [],
@@ -468,6 +513,15 @@
     "amount": 1
   },
   {
+    "id": 10118,
+    "name": "Conduit d'air",
+    "from": "craft",
+    "final": false,
+    "craft": [[101507,101507,101507], [101509,0,0], [0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
     "id": 325,
     "name": "Seau",
     "from": "craft",
@@ -545,7 +599,7 @@
     "from": "craft",
     "final": false,
     "craft": [[4,4,4], [4,0,4], [4,4,4]],
-    "nb":0,
+    "nb": 0,
     "amount": 1
   },
   {
@@ -554,7 +608,25 @@
     "from": "craft",
     "final": false,
     "craft": [[35,35,35], [101170,101170,101170], [101509,101509,101509]],
-    "nb":0,
+    "nb": 0,
+    "amount": 1
+  },
+  {
+    "id": 10119,
+    "name": "Concentrateur d'oxygéne",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,101507,101509], [101507,101170,101507], [101509,10118,101509]],
+    "nb": 0,
+    "amount": 1
+  },
+  {
+    "id": 33560,
+    "name": "Concentrateur d'oxygéne",
+    "from": "craft",
+    "final": false,
+    "craft": [[101509,101507,101509], [101507,10119,101507], [101509,101510,101509]],
+    "nb": 0,
     "amount": 1
   },
   {
@@ -607,7 +679,7 @@
     "name": "Buche",
     "from": "craft",
     "final": true,
-    "craft": [[17,0,0], [0,0, 0], [0, 0, 0]],
+    "craft": [[0,0,0], [0,0, 0], [0, 0, 0]],
     "nb":0,
     "amount": 1
   },
@@ -658,7 +730,7 @@
   },
   {
     "id": 77,
-    "name": "Buton",
+    "name": "Bouton",
     "from": "craft",
     "final": false,
     "craft": [[1, 0, 0], [0, 0, 0], [0, 0, 0]],
@@ -680,6 +752,166 @@
     "from": "craft",
     "final": false,
     "craft": [[0,101507,0],[101507,331,101507],[101507,263,101507]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 253358,
+    "name": "Plan - Fusée spatiale",
+    "from": "adminshop",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5095,
+    "name": "Magnesium compressé",
+    "from": "compress",
+    "final": false,
+    "craft": [5094],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5094,
+    "name": "Magnesium",
+    "from": "mine",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 14232,
+    "name": "Tin Plate",
+    "from": "craft",
+    "final": false,
+    "craft": [[101504,101504,0],[101504,101504,0],[0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 14235,
+    "name": "Iron Plate",
+    "from": "craft",
+    "final": false,
+    "craft": [[265,265,0],[265,265,0],[0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 14233,
+    "name": "Bronze Plate",
+    "from": "craft",
+    "final": false,
+    "craft": [[14240,14240,0],[14240,14240,0],[0,0,0]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+  "id": 5097,
+  "name": "Propulseur thermique",
+  "from": "crush",
+  "final": true,
+  "craft": [],
+  "nb":0,
+  "amount": 1
+  },
+  {
+    "id": 5093,
+    "name": "Kevlar",
+    "from": "crush",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5096,
+    "name": "Dispositif de guidage",
+    "from": "crush",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 1015019,
+    "name": "Module de fréquence",
+    "from": "craft",
+    "final": false,
+    "craft": [[0, 101508, 0], [1015011, 356, 1015011], [331,1015013, 331]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 3663,
+    "name": "Collecteur elec",
+    "from": "craft",
+    "final": false,
+    "craft": [[101615,0,101615], [101509, 1015019, 101509], [101509,33634, 101509]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 10162,
+    "name": "Fusée",
+    "from": "crafting station",
+    "final": false,
+    "craft": [
+      {"id": 253358, "nb": 1 },
+      {"id": 5108, "nb": 1 },
+      {"id": 5110, "nb": 1 },
+      {"id": 5096, "nb": 2 },
+      {"id": 14236, "nb": 64 },
+      {"id": 5099, "nb": 8 },
+      {"id": 5095, "nb": 20 },
+      {"id": 5092, "nb": 10 },
+      {"id": 5096, "nb": 12 }
+    ],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5108,
+    "name": "Moteur Vulcain",
+    "from": "crafting station",
+    "final": false,
+    "craft": [
+      {"id": 14235, "nb": 1 },
+      {"id": 5097, "nb": 1 },
+      {"id": 14234, "nb": 576 },
+      {"id": 289, "nb": 448 },
+      {"id": 5099, "nb": 4 }
+    ],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5110,
+    "name": "Moteur Propergol",
+    "from": "crafting station",
+    "final": false,
+    "craft": [
+      {"id": 14235, "nb": 1 },
+      {"id": 5097, "nb": 1 },
+      {"id": 5093, "nb": 1 },
+      {"id": 14234, "nb": 576 },
+      {"id": 289, "nb": 384 }
+    ],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 5109,
+    "name": "Tuyère",
+    "from": "crafting station",
+    "final": false,
+    "craft": [
+      {"id": 5095, "nb": 8},
+      {"id": 14232, "nb": 256},
+      {"id": 14235, "nb": 256}],
     "nb":0,
     "amount": 1
   }

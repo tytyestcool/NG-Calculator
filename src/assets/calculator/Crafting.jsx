@@ -173,6 +173,7 @@ function CraftingPage() {
                     "id": item.id,
                     "name" : item.name,
                     "nb" : parseInt(iteminfo.crafts[0].nb),
+                    "final" : item.final,
                     "craft" : 0
                 })
             }

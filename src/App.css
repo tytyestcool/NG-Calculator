@@ -111,6 +111,11 @@
   margin: 0;
 }
 
+.ResourceFinal {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
 .CraftStepInfo{
   white-space: wrap;
   display: flex;
