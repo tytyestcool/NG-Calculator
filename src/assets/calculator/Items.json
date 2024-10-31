@@ -684,6 +684,42 @@
     "amount": 1
   },
   {
+    "id": 14229,
+    "name": "Advanced Circuit ",
+    "from": "craft",
+    "final": false,
+    "craft": [[331,331,331], [14228,264,14228], [331, 331, 331]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 14230,
+    "name": "Elite Circuit",
+    "from": "craft",
+    "final": false,
+    "craft": [[266,266,266], [14229,22,14229], [266, 266, 266]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 22,
+    "name": "Lapis block",
+    "from": "craft",
+    "final": false,
+    "craft": [[3514,3514,3514], [3514,3514,3514], [3514, 3514, 3514]],
+    "nb":0,
+    "amount": 1
+  },
+  {
+    "id": 3514,
+    "name": "Lapis",
+    "from": "craft",
+    "final": true,
+    "craft": [],
+    "nb":0,
+    "amount": 1
+  },
+  {
     "id": 76,
     "name": "Torche en redstone",
     "from": "craft",
